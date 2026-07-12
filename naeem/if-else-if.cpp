@@ -52,7 +52,41 @@ int main()
         cout << "Teenager\n";
     else
         cout << "Adult\n";
+    // Q5
+    // Check temperature.
 
-  
+    int temp = 28;
+
+    if (temp > 35)
+        cout << "Hot\n";
+    else if (temp >= 20)
+        cout << "Warm\n";
+    else
+        cout << "Cold\n";
+
+    // Q6
+    // Check whether a number is positive even, positive odd, or negative.
+
+    n = 9;
+
+    if (n < 0)
+        cout << "Negative\n";
+    else if (n % 2 == 0)
+        cout << "Positive Even\n";
+    else
+        cout << "Positive Odd\n";
+
+    // Q7
+    // Check performance.
+
+    int score = 45;
+
+    if (score >= 90)
+        cout << "Excellent\n";
+    else if (score >= 50)
+        cout << "Pass\n";
+    else
+        cout << "Fail\n";
+
     return 0;
 }
