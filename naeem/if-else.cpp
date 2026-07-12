@@ -85,5 +85,34 @@ int main()
     else
         cout << "Not Divisible\n";
 
+    // Q8
+    // Check whether a character is lowercase.
+
+    char ch = 'K';
+
+    if (ch >= 'a' && ch <= 'z')
+        cout << "Lowercase\n";
+    else
+        cout << "Not Lowercase\n";
+
+    // Q9
+    // Check whether salary is above 40000.
+
+    int salary = 35000;
+
+    if (salary > 40000)
+        cout << "High Salary\n";
+    else
+        cout << "Low Salary\n";
+
+    // Q10
+    // Check whether a number is zero.
+
+    n = 0;
+
+    if (n == 0)
+        cout << "Zero\n";
+    else
+        cout << "Not Zero\n";
     return 0;
 }
