@@ -104,105 +104,193 @@ int main()
         cout << "Invalid Operator";
     }
 
-    // Q5
-    // Check if username is correct and password is correct.
-
-    string username = "admin";
-    string password = "1234";
-
-    if (username == "admin")
-    {
-        if (password == "1234")
-            cout << "Login Successful";
-        else
-            cout << "Wrong Password";
-    }
-    else
-        cout << "Wrong Username";
-
     // Q6
-    // Check if a year is a leap year.
-    // (Simplified: divisible by 4, then by 100, then by 400)
+    // Nested Switch
+    // Country:
+    // 1 = Pakistan
+    // 2 = USA
+    // City:
+    // Pakistan -> 1 = Lahore, 2 = Karachi
+    // USA -> 1 = New York, 2 = Chicago
 
-    int year = 2000;
+    int country = 1, city = 2;
 
-    if (year % 4 == 0)
+    switch (country)
     {
-        if (year % 100 == 0)
+    case 1:
+        switch (city)
         {
-            if (year % 400 == 0)
-                cout << "Leap Year";
-            else
-                cout << "Not Leap Year";
+        case 1:
+            cout << "Lahore";
+            break;
+        case 2:
+            cout << "Karachi";
+            break;
+        default:
+            cout << "Invalid City";
         }
-        else
-            cout << "Leap Year";
+        break;
+
+    case 2:
+        switch (city)
+        {
+        case 1:
+            cout << "New York";
+            break;
+        case 2:
+            cout << "Chicago";
+            break;
+        default:
+            cout << "Invalid City";
+        }
+        break;
+
+    default:
+        cout << "Invalid Country";
     }
-    else
-        cout << "Not Leap Year";
 
     // Q7
-    // Check if a person is an adult and has a driving license.
+    // Nested Switch
+    // Department:
+    // 1 = IT
+    // 2 = CS
+    // Semester:
+    // 1 or 2
 
-    int age = 20;
-    bool hasLicense = true;
+    int dept = 2, sem = 1;
 
-    if (age >= 18)
+    switch (dept)
     {
-        if (hasLicense)
-            cout << "Can Drive";
-        else
-            cout << "Need License";
+    case 1:
+        switch (sem)
+        {
+        case 1:
+            cout << "IT First Semester";
+            break;
+        case 2:
+            cout << "IT Second Semester";
+            break;
+        }
+        break;
+
+    case 2:
+        switch (sem)
+        {
+        case 1:
+            cout << "CS First Semester";
+            break;
+        case 2:
+            cout << "CS Second Semester";
+            break;
+        }
+        break;
     }
-    else
-        cout << "Too Young";
 
     // Q8
-    // Check if a number is positive and divisible by 5.
+    // Nested Switch
+    // Menu:
+    // 1 = Drinks
+    // 2 = Snacks
 
-    int n = 25;
+    int menu = 1, item = 2;
 
-    if (n > 0)
+    switch (menu)
     {
-        if (n % 5 == 0)
-            cout << "Positive and Divisible by 5";
-        else
-            cout << "Positive but Not Divisible by 5";
+    case 1:
+        switch (item)
+        {
+        case 1:
+            cout << "Tea";
+            break;
+        case 2:
+            cout << "Coffee";
+            break;
+        }
+        break;
+
+    case 2:
+        switch (item)
+        {
+        case 1:
+            cout << "Burger";
+            break;
+        case 2:
+            cout << "Pizza";
+            break;
+        }
+        break;
     }
-    else
-        cout << "Negative Number";
 
     // Q9
-    // Check if marks are passing and attendance is at least 75%.
+    // Nested Switch
+    // Vehicle:
+    // 1 = Car
+    // 2 = Bike
 
-    int marks = 65;
-    int attendance = 80;
+    int vehicle = 2, brand = 1;
 
-    if (marks >= 50)
+    switch (vehicle)
     {
-        if (attendance >= 75)
-            cout << "Exam Passed";
-        else
-            cout << "Attendance Short";
+    case 1:
+        switch (brand)
+        {
+        case 1:
+            cout << "Toyota";
+            break;
+        case 2:
+            cout << "Honda";
+            break;
+        }
+        break;
+
+    case 2:
+        switch (brand)
+        {
+        case 1:
+            cout << "Yamaha";
+            break;
+        case 2:
+            cout << "Suzuki";
+            break;
+        }
+        break;
     }
-    else
-        cout << "Exam Failed";
 
     // Q10
-    // Check if a customer spent at least 5000 and is a premium member.
+    // Nested Switch
+    // Role:
+    // 1 = Student
+    // 2 = Teacher
 
-    int amount = 7000;
-    bool premium = true;
+    int role = 1, option = 2;
 
-    if (amount >= 5000)
+    switch (role)
     {
-        if (premium)
-            cout << "Discount Applied";
-        else
-            cout << "Become Premium";
+    case 1:
+        switch (option)
+        {
+        case 1:
+            cout << "View Result";
+            break;
+        case 2:
+            cout << "View Attendance";
+            break;
+        }
+        break;
+
+    case 2:
+        switch (option)
+        {
+        case 1:
+            cout << "Enter Marks";
+            break;
+        case 2:
+            cout << "Take Attendance";
+            break;
+        }
+        break;
     }
-    else
-        cout << "No Discount";
+
 
     return 0;
 }
