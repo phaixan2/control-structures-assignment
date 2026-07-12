@@ -119,5 +119,52 @@ int main()
     else
         cout << "Too Young";
 
+          // Q8
+    // Check if a number is positive and divisible by 5.
+
+    n = 25;
+
+    if (n > 0)
+    {
+        if (n % 5 == 0)
+            cout << "Positive and Divisible by 5";
+        else
+            cout << "Positive but Not Divisible by 5";
+    }
+    else
+        cout << "Negative Number";
+
+    // Q9
+    // Check if marks are passing and attendance is at least 75%.
+
+    marks = 65;
+    int attendance = 80;
+
+    if (marks >= 50)
+    {
+        if (attendance >= 75)
+            cout << "Exam Passed";
+        else
+            cout << "Attendance Short";
+    }
+    else
+        cout << "Exam Failed";
+
+    // Q10
+    // Check if a customer spent at least 5000 and is a premium member.
+
+    int amount = 7000;
+    bool premium = true;
+
+    if (amount >= 5000)
+    {
+        if (premium)
+            cout << "Discount Applied";
+        else
+            cout << "Become Premium";
+    }
+    else
+        cout << "No Discount";
+        
     return 0;
 }
