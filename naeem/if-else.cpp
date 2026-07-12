@@ -45,5 +45,45 @@ int main()
     else
         cout << "Not Eligible\n";
 
-        return 0;
+    // Q4
+    // Check whether a person can vote.
+
+    int age = 17;
+
+    if (age >= 18)
+        cout << "Eligible\n";
+    else
+        cout << "Not Eligible\n";
+
+    // Q5
+    // Check whether temperature is hot.
+
+    int temp = 29;
+
+    if (temp > 30)
+        cout << "Hot\n";
+    else
+        cout << "Cold\n";
+
+    // Q6
+    // Find the larger number.
+
+    int a = 15, b = 20;
+
+    if (a > b)
+        cout << a << endl;
+    else
+        cout << b << endl;
+
+    // Q7
+    // Check whether a number is divisible by 3.
+
+    n = 14;
+
+    if (n % 3 == 0)
+        cout << "Divisible\n";
+    else
+        cout << "Not Divisible\n";
+
+    return 0;
 }
