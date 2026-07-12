@@ -37,5 +37,29 @@ int main()
     if (marks >= 50)
         cout << "Pass\n";
 
+    // Q5
+    // Check if salary is greater than 50000.
+
+    int salary = 60000;
+
+    if (salary > 50000)
+        cout << "High Salary\n";
+
+    // Q6
+    // Check if temperature is above 30.
+
+    int temp = 35;
+
+    if (temp > 30)
+        cout << "Hot\n";
+
+    // Q7
+    // Check if character is uppercase.
+
+    char ch = 'A';
+
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "Uppercase\n";
+
     return 0;
 }
