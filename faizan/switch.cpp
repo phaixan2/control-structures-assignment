@@ -104,6 +104,59 @@ int main()
         cout << "Invalid Operator";
     }
 
+    // Q5
+    // Check if username is correct and password is correct.
 
+    string username = "admin";
+    string password = "1234";
+
+    if (username == "admin")
+    {
+        if (password == "1234")
+            cout << "Login Successful";
+        else
+            cout << "Wrong Password";
+    }
+    else
+        cout << "Wrong Username";
+
+    // Q6
+    // Check if a year is a leap year.
+    // (Simplified: divisible by 4, then by 100, then by 400)
+
+    int year = 2000;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0)
+                cout << "Leap Year";
+            else
+                cout << "Not Leap Year";
+        }
+        else
+            cout << "Leap Year";
+    }
+    else
+        cout << "Not Leap Year";
+
+    // Q7
+    // Check if a person is an adult and has a driving license.
+
+    int age = 20;
+    bool hasLicense = true;
+
+    if (age >= 18)
+    {
+        if (hasLicense)
+            cout << "Can Drive";
+        else
+            cout << "Need License";
+    }
+    else
+        cout << "Too Young";
+
+        
     return 0;
 }
