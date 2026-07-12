@@ -88,5 +88,41 @@ int main()
     else
         cout << "Fail\n";
 
+    // Q8
+    // Check salary category.
+
+    int salary = 55000;
+
+    if (salary >= 100000)
+        cout << "High\n";
+    else if (salary >= 50000)
+        cout << "Medium\n";
+    else
+        cout << "Low\n";
+
+    // Q9
+    // Check character type.
+
+    char ch = 'e';
+
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "Uppercase\n";
+    else if (ch >= 'a' && ch <= 'z')
+        cout << "Lowercase\n";
+    else
+        cout << "Not Alphabet\n";
+
+    // Q10
+    // Check whether a year is in the past, present, or future.
+
+    int year = 2027;
+
+    if (year < 2026)
+        cout << "Past\n";
+    else if (year == 2026)
+        cout << "Present\n";
+    else
+        cout << "Future\n";
+
     return 0;
 }
