@@ -61,5 +61,29 @@ int main()
     if (ch >= 'A' && ch <= 'Z')
         cout << "Uppercase\n";
 
+    // Q8
+    // Check if number is divisible by 5.
+
+    n = 25;
+
+    if (n % 5 == 0)
+        cout << "Divisible by 5\n";
+
+    // Q9
+    // Check if year is 2026.
+
+    int year = 2026;
+
+    if (year == 2026)
+        cout << "Current Year\n";
+
+    // Q10
+    // Check if character is a vowel.
+
+    ch = 'e';
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+        cout << "Vowel\n";
+
     return 0;
 }
