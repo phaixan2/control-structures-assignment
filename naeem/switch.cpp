@@ -168,5 +168,72 @@ int main()
     default:
         cout << "Invalid Season\n";
     }
+
+
+    // Q8
+    // Print direction.
+    // N, S, E, W.
+
+    char direction = 'E';
+
+    switch (direction)
+    {
+    case 'N':
+        cout << "North\n";
+        break;
+    case 'S':
+        cout << "South\n";
+        break;
+    case 'E':
+        cout << "East\n";
+        break;
+    case 'W':
+        cout << "West\n";
+        break;
+    default:
+        cout << "Invalid Direction\n";
+    }
+
+    // Q9
+    // Print department.
+    // 1 = IT, 2 = CS, 3 = SE.
+
+    int dept = 2;
+
+    switch (dept)
+    {
+    case 1:
+        cout << "IT\n";
+        break;
+    case 2:
+        cout << "CS\n";
+        break;
+    case 3:
+        cout << "SE\n";
+        break;
+    default:
+        cout << "Invalid Department\n";
+    }
+
+    // Q10
+    // Print menu option.
+    // 1 = Login, 2 = Register, 3 = Exit.
+
+    int option = 1;
+
+    switch (option)
+    {
+    case 1:
+        cout << "Login\n";
+        break;
+    case 2:
+        cout << "Register\n";
+        break;
+    case 3:
+        cout << "Exit\n";
+        break;
+    default:
+        cout << "Invalid Option\n";
+    }
     return 0;
 }
