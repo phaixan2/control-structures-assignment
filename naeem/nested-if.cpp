@@ -85,5 +85,39 @@ int main()
             cout << "Discount Applied\n";
     }
 
+    // Q8
+    // Check if a person can apply for a job.
+
+    age = 25;
+    bool graduate = true;
+
+    if (age >= 18)
+    {
+        if (graduate)
+            cout << "Eligible for Job\n";
+    }
+
+    // Q9
+    // Check if attendance and marks satisfy exam requirements.
+
+    int attendance = 80;
+    marks = 70;
+
+    if (attendance >= 75)
+    {
+        if (marks >= 50)
+            cout << "Exam Passed\n";
+    }
+
+    // Q10
+    // Check if a number is positive and divisible by 5.
+
+    n = 25;
+
+    if (n > 0)
+    {
+        if (n % 5 == 0)
+            cout << "Positive and Divisible by 5\n";
+    }
     return 0;
 }
