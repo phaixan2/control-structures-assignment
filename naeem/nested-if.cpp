@@ -50,7 +50,40 @@ int main()
             cout << "Eligible\n";
     }
 
-   
+    // Q5
+    // Check if username and password are correct.
+
+    string username = "admin";
+    string password = "1234";
+
+    if (username == "admin")
+    {
+        if (password == "1234")
+            cout << "Login Successful\n";
+    }
+
+    // Q6
+    // Check if a year is a leap year (simplified).
+
+    int year = 2024;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 != 0)
+            cout << "Leap Year\n";
+    }
+
+    // Q7
+    // Check if a customer can get a discount.
+
+    int purchase = 7000;
+    bool member = true;
+
+    if (purchase >= 5000)
+    {
+        if (member)
+            cout << "Discount Applied\n";
+    }
 
     return 0;
 }
