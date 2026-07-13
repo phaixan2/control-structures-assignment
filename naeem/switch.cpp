@@ -103,6 +103,70 @@ int main()
         cout << "Invalid Grade\n";
     }
 
-    
+     // Q5
+    // Print a fruit.
+    // 1 = Apple, 2 = Banana, 3 = Mango.
+
+    int fruit = 3;
+
+    switch (fruit)
+    {
+    case 1:
+        cout << "Apple\n";
+        break;
+    case 2:
+        cout << "Banana\n";
+        break;
+    case 3:
+        cout << "Mango\n";
+        break;
+    default:
+        cout << "Invalid Fruit\n";
+    }
+
+    // Q6
+    // Simple calculator.
+
+    int a = 12, b = 6;
+    char op = '+';
+
+    switch (op)
+    {
+    case '+':
+        cout << a + b << endl;
+        break;
+    case '-':
+        cout << a - b << endl;
+        break;
+    case '*':
+        cout << a * b << endl;
+        break;
+    case '/':
+        cout << a / b << endl;
+        break;
+    default:
+        cout << "Invalid Operator\n";
+    }
+
+    // Q7
+    // Print season.
+    // 1 = Spring, 2 = Summer, 3 = Winter.
+
+    int season = 1;
+
+    switch (season)
+    {
+    case 1:
+        cout << "Spring\n";
+        break;
+    case 2:
+        cout << "Summer\n";
+        break;
+    case 3:
+        cout << "Winter\n";
+        break;
+    default:
+        cout << "Invalid Season\n";
+    }
     return 0;
 }
